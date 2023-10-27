@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Brian Clough</title>
+</head>
+<body>
+ <div id="content">His achievements as a manager are numerous. he won 2 champions league, 1 European super cup, 4 league cups, and 2 first division titles</div>
+<header class="header">
+<nav class="bar">
+    <a href="home.html">Home page</a>
+    <a href="achievements.html">Achievements</a>
+    <a href="Quotes.html">Quotes</a>
+    <a href="innot.html">In Nottingham</a>
+    <a href="ref.html">refrences</a>
+</nav>
+</header>
+<div class="container"></div>
+</body>
+<style>
+* {
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+
+.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 20px 100px;
+    background: transparent;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 100;
+}
+.bar a {
+    position: relative;
+    font-size:5 18px;
+    color: red;
+    font-weight: 500;
+    text-decoration: none;
+    margin-left: 40px;
+}
+
+.bar a::before {
+    content: '';
+    position: absolute;
+    top: 110%;
+    left: 0;
+    width: 0;
+    height: 2px;
+    background: black;
+    transition: .3s;
+}
+.bar a:hover::before {
+    width: 100%;
+}
+
+body {
+    font-family: sans-serif;
+    margin: 0;
+    padding: 0;
+    min-height: 100vh;
+    display: flex;
+    margin-top: 100px;
+    align-items: left;
+    justify-content: left;
+    background-image: url(https://i.guim.co.uk/img/media/3f8a4fb1b11c3f0e1df5589782824b8c7373d75c/0_150_2018_1211/master/2018.jpg?width=1200&height=900&quality=85&auto=format&fit=crop&s=64644b029e05934979754c7bab34db4c);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+#content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 80vh;
+    width: 50%;
+    background-color: rgba(0, 0, 0, 0.3);
+    font-size: 48px;
+    color: white;
+    text-transform: uppercase;
+}
+
+</style>
+</html>

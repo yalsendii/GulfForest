@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Brian Clough</title>
+</head>
+<body>
+ <div id="content"></div>
+<header class="header">
+<nav class="bar">
+    <a href="Home.html">Home page</a>
+    <a href="achievements.html">Achievements</a>
+    <a href="Quotes.html">Quotes</a>
+    <a href="innot.html">In Nottingham</a>
+    <a href="ref.html">refrences</a>
+    
+</nav>
+</header>
+<div class="container"></div>
+</body>
+<style>
+* {
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+
+.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 20px 100px;
+    background: transparent;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 100;
+}
+.bar a {
+    position: relative;
+    font-size:5 18px;
+    color: white;
+    font-weight: 500;
+    text-decoration: none;
+    margin-left: 40px;
+}
+
+.bar a::before {
+    content: '';
+    position: absolute;
+    top: 110%;
+    left: 0;
+    width: 0;
+    height: 2px;
+    background: black;
+    transition: .3s;
+}
+.bar a:hover::before {
+    width: 100%;
+}
+
+body {
+    font-family: sans-serif;
+    margin: 0;
+    padding: 0;
+    min-height: 100vh;
+    display: flex;
+    align-items: left;
+    align-content: left;
+    margin-top: 100px;
+    background-image: url(https://i.ytimg.com/vi/gfnDPfpE5uY/maxresdefault.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+</style>
+</html>
